@@ -1,26 +1,42 @@
 #include <iostream>
 #include <string>
 #include <vector>	
+#include <algorithm>
+#include <cstdlib>
 
 using namespace std;
-long long sum(vector<int> &a){
-	std::vector<int>::iterator iter;
-	long long result = 0;
-	for(iter = a.begin(); iter != a.end(); iter++){
-		result += *iter;
+vector<int> arr;
+void selfNumber(int temp){
+	int check = 0;
+	
+	for(int x=temp; x>0; x--){
+		string casting = to_string(x);
+		int get = x;
+		int plus = 0;
+		
+		for(int i=0; i<casting.size(); i++){
+			plus += casting[i] - '0';
+		}
+		
+		int result = get + plus;
+		if(result == temp){
+			check = 1;
+			break;
+		}
 	}
-	return result;
+	
+	if(check == 0) arr.push_back(temp);
+	temp++;
+	if(temp < 10000) selfNumber(temp);
 }
 
-
 int main(int argc, char** argv) {
-
-	vector<int> aa;
-	aa.push_back(1);
-	aa.push_back(2);
-	aa.push_back(3);
-	int a = sum(aa);
-	cout << a; 
-
+	selfNumber(1);
+	
+	vector<int>::iterator iter;
+	for(iter=arr.begin(); iter != arr.end(); iter++){
+		cout << *iter << "\n";
+	}
+	
 	return 0;
 }
