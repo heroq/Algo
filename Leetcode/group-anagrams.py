@@ -1,6 +1,6 @@
-from typing import List
-
+# 시간초과
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
 strsArr = []
 
 # 문자를 반복
