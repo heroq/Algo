@@ -20,9 +20,9 @@ def threeSum(nums):
         while left < right:
             total = nums[i] + nums[left] + nums[right]
 
-            if total > 0:
+            if total < 0:
                 left += 1
-            elif total < 0:
+            elif total > 0:
                 right -= 1
             else:
                 result.append([nums[i], nums[left], nums[right]])
