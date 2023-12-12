@@ -1,11 +1,9 @@
-# 진행 필요
 
 nums = [-1, 0, 1, 2, -1, -4]
 
 
 # 1. 투 포인터를 사용한다.
-# 2. 중복 된 값을 넘겨야한다.
-# 3.
+# 2. 중복 된 값 확인
 
 def threeSum(nums):
     result = []
@@ -20,7 +18,7 @@ def threeSum(nums):
         while left < right:
             total = nums[i] + nums[left] + nums[right]
 
-            if total < 0:
+            if total < 0:  # 정렬을 했기에 값이 크면 left를 올려서 맞춰준다.
                 left += 1
             elif total > 0:
                 right -= 1
