@@ -3,15 +3,12 @@
 def longestPalindrome(s: str) -> str:
     # 가상의 문자 추가
     modified_s = '#'.join('#' + s + '#')
-    print(modified_s)
 
     # 팰린드롬 반경 배열 초기화
     n = len(modified_s)
-    print(n)
 
     # 개수 만큼 배열 생성
     radius = [0] * n
-    print(radius)
 
     # 중심과 우측 경계 초기화
     center, right = 0, 0
