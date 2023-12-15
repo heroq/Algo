@@ -1,1 +1,17 @@
 *.exe
+BOJ/.idea/vcs.xml
+BOJ/.idea/modules.xml
+BOJ/.idea/misc.xml
+BOJ/.idea/inspectionProfiles/profiles_settings.xml
+BOJ/.idea/discord.xml
+BOJ/.idea/BOJ.iml
+BOJ/.idea/.name
+BOJ/.DS_Store
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/discord.xml
+.idea/CAlgo.iml
+.DS_Store
+test.py
