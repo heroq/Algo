@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 	aa.push_back(2);
 	aa.push_back(3);
 	int a = sum(aa);
-	cout << a; 
+	cout << a;
 
 	return 0;
 }
